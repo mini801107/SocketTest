@@ -49,7 +49,7 @@ class FirstViewController: UIViewController {
     //Sending
     @IBAction func sendAct(sender: AnyObject) {
         let data = msgTF.text?.dataUsingEncoding(NSUTF8StringEncoding)
-        clientSocket?.writeData(imgData, withTimeout: -1, tag: 0)
+        clientSocket?.writeData(data, withTimeout: -1, tag: 0)
         addText("Send Data")
     }
     
